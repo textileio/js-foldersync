@@ -1,4 +1,4 @@
-# js-foldersync
+# js-foldersync (demo)
 
 [![Made by Textile](https://img.shields.io/badge/made%20by-Textile-informational.svg?style=popout-square)](https://textile.io)
 [![Chat on Slack](https://img.shields.io/badge/slack-slack.textile.io-informational.svg?style=popout-square)](https://slack.textile.io)
@@ -6,7 +6,7 @@
 [![CircleCI branch](https://img.shields.io/circleci/project/github/textileio/js-foldersync/master.svg?style=popout-square)](https://circleci.com/gh/textileio/js-foldersync)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=popout-square)](https://github.com/RichardLitt/standard-readme)
 
-> Shared folder synchronization based on Textile Threads
+> Demo: Shared folder synchronization based on Textile Threads
 
 Go to [the docs](https://docs.textile.io/) for more about Textile.
 
