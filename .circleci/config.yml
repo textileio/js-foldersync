@@ -1,0 +1,43 @@
+version: 2.1
+
+defaults: &defaults
+  working_directory: ~/js-foldersync
+  docker:
+    - image: node:10.0.0
+
+jobs:
+  lint-test:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - run: npm install
+      - run:
+          name: Lint
+          command: |
+            npm run lint
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Test
+          command: |
+            mkdir -p test-results/jest
+            npm run test
+          environment:
+            JEST_JUNIT_OUTPUT: test-results/jest/junit.xml
+      - store_test_results:
+          path: test-results
+      - store_artifacts:
+          path: test-results
+
+workflows:
+  version: 2
+  js-foldersync:
+    jobs:
+      - lint-test:
+          filters:
+            tags:
+              only: /.*/
