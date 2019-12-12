@@ -58,7 +58,7 @@ export class FolderStore {
 
     // Find existing folders
     const found = await this.client.modelFind(this.finderID, 'Folder2', {})
-    this.folders = found.entitiesList.map((entity) => JSON.parse(entity as string)).map((obj) => {
+    this.folders = found.entitiesList.map((entity) => entity).map((obj) => {
       return new FolderModel(obj)
     })
 
@@ -70,7 +70,7 @@ export class FolderStore {
       owner,
       files: []
     }])
-    const folders = created.entitiesList.map((entity) => JSON.parse(entity as string))
+    const folders = created.entitiesList
     this.folders.push(new FolderModel(folders.pop()))
   }
 
@@ -91,12 +91,12 @@ export class FolderStore {
 
     // Find existing files
     const found = await this.client.modelFindByID(this.finderID, 'Folder2', this.folderID)
-    this.folder = new FolderModel(JSON.parse(found.entity as string))
+    this.folder = new FolderModel(found.entity)
 
     await this.client.listen(this.finderID, 'Folder2', this.folderID, ((reply) => {
       console.debug('Folder updated...')
       // @todo: this updated model does not contain the new files.
-      // this.folder = new FolderModel(JSON.parse(found.entity as string))
+      // this.folder = new FolderModel(found.entity as string)
       // console.debug(this.folder)
     }))
   }
