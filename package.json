@@ -71,7 +71,7 @@
     "postcss-url": "^8.0.0",
     "react-hot-loader": "^4.12.17",
     "@hot-loader/react-dom": "^16.11.0",
-    "style-loader": "^1.0.0",
+    "style-loader": "^1.1.2",
     "ts-jest": "^24.1.0",
     "tslint": "^5.20.1",
     "ts-loader": "^6.2.1",
