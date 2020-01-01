@@ -55,7 +55,7 @@
     "@types/react-dom": "^16.9.4",
     "@types/react-router-dom": "^5.1.2",
     "@types/webpack": "^4.41.1",
-    "@types/jest": "^24.0.22",
+    "@types/jest": "^24.0.25",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.0",
     "file-loader": "^4.2.0",
