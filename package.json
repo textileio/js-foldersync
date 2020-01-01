@@ -35,7 +35,7 @@
     "copy-to-clipboard": "^3.2.0",
     "mobx": "^5.15.1",
     "mobx-react": "^6.1.4",
-    "mobx-react-router": "^4.0.7",
+    "mobx-react-router": "^4.1.0",
     "mobx-router": "0.0.20",
     "moment": "^2.24.0",
     "react": "^16.12.0",
