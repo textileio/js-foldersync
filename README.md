@@ -3,8 +3,8 @@
 [![Made by Textile](https://img.shields.io/badge/made%20by-Textile-informational.svg?style=popout-square)](https://textile.io)
 [![Chat on Slack](https://img.shields.io/badge/slack-slack.textile.io-informational.svg?style=popout-square)](https://slack.textile.io)
 [![GitHub license](https://img.shields.io/github/license/textileio/js-foldersync.svg?style=popout-square)](./LICENSE)
-[![CircleCI branch](https://img.shields.io/circleci/project/github/textileio/js-foldersync/master.svg?style=popout-square)](https://circleci.com/gh/textileio/js-foldersync)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=popout-square)](https://github.com/RichardLitt/standard-readme)
+[![Threads version](https://img.shields.io/badge/dynamic/json?color=3527ff&label=Threads&prefix=v&query=%24.dependencies%5B%27%40textile%2Fthreads-client-grpc%27%5D.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Ftextileio%2Fjs-threads-client%2Fmaster%2Fpackage-lock.json)](https://github.com/textileio/go-threads)
 
 > Demo: Shared folder synchronization based on Textile Threads
 
