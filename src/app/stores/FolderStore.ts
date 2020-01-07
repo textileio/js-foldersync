@@ -39,6 +39,7 @@ export class FolderStore {
   @action public async createFinder() {
     const store = await this.client.newStore()
     await this.client.registerSchema(store.id, 'Folder2', schema)
+    await this.client.start(store.id)
     this.finderID = store.id
     return FolderStore.shortID(this.finderID)
   }
