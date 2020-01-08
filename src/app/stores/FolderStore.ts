@@ -94,7 +94,7 @@ export class FolderStore {
     const found = await this.client.modelFindByID(this.finderID, 'Folder2', this.folderID)
     this.folder = new FolderModel(found.entity)
 
-    await this.client.listen<FolderModel>(this.finderID, 'Folder2', this.folderID, reply => {
+    await this.client.listen<FolderModel>(this.finderID, 'Folder2', this.folderID, (reply) => {
       console.debug('Folder updated...', reply.entity.ID)
     })
   }
