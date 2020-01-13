@@ -48,7 +48,7 @@
     "uuid": "^3.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
+    "@babel/core": "^7.8.0",
     "@hot-loader/react-dom": "^16.11.0",
     "@textile/tslint-rules": "^1.0.3",
     "@types/classnames": "^2.2.9",
