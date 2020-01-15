@@ -52,7 +52,7 @@
     "@hot-loader/react-dom": "^16.11.0",
     "@textile/tslint-rules": "^1.0.3",
     "@types/classnames": "^2.2.9",
-    "@types/jest": "^24.0.25",
+    "@types/jest": "^24.9.0",
     "@types/node": "^13.1.7",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
