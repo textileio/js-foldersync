@@ -2,7 +2,7 @@ import { observable, action } from 'mobx'
 import { matchPath } from 'react-router-dom'
 import { RouterStore } from 'app/stores/RouterStore'
 import { FolderModel, FileModel } from 'app/models'
-import { Client } from '@textile/threads-client'
+import { Client, Entity } from '@textile/threads-client'
 import uuid from 'uuid'
 
 export class FolderStore {
@@ -59,7 +59,7 @@ export class FolderStore {
 
     // Find existing folders
     const found = await this.client.modelFind(this.finderID, 'Folder2', {})
-    this.folders = found.entitiesList.map((entity) => entity).map((obj) => {
+    this.folders = found.entitiesList.map((entity: any) => entity).map((obj: any) => {
       return new FolderModel(obj)
     })
 
@@ -94,7 +94,7 @@ export class FolderStore {
     const found = await this.client.modelFindByID(this.finderID, 'Folder2', this.folderID)
     this.folder = new FolderModel(found.entity)
 
-    await this.client.listen<FolderModel>(this.finderID, 'Folder2', this.folderID, (reply) => {
+    await this.client.listen<FolderModel>(this.finderID, 'Folder2', this.folderID, (reply: Entity<FolderModel>) => {
       console.debug('Folder updated...', reply.entity.ID)
     })
   }

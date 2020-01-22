@@ -40,5 +40,8 @@ jobs:
     - name: Lint
       run: npm run lint
 
+    - name: Build
+      run: npm run build
+
     - name: Server test
       run: npm run ci
