@@ -7,7 +7,7 @@ import { App } from 'app'
 
 // prepare MobX stores
 const history = createBrowserHistory()
-const rootStore = createStores(history, 'http://localhost:7006')
+const rootStore = createStores(history, 'http://localhost:6007')
 
 // render react DOM
 ReactDOM.render(
