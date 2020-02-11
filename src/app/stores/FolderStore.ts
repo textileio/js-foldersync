@@ -33,7 +33,7 @@ export class FolderStore {
   constructor(router: RouterStore, host: string) {
     this.router = router
     this.host = host
-    this.client = new Client(this.host)
+    this.client = new Client({host: this.host})
   }
 
   @action public async createFinder() {
