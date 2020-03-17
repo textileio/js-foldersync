@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
-    "@hot-loader/react-dom": "^16.12.0",
+    "@hot-loader/react-dom": "^16.13.0",
     "@textile/tslint-rules": "^1.0.3",
     "@types/classnames": "^2.2.10",
     "@types/jest": "^25.1.4",
