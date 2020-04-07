@@ -36,7 +36,7 @@
     "classnames": "^2.2.6",
     "copy-to-clipboard": "^3.3.1",
     "mobx": "^5.15.4",
-    "mobx-react": "^6.1.5",
+    "mobx-react": "^6.2.0",
     "mobx-react-router": "^4.1.0",
     "mobx-router": "0.0.20",
     "moment": "^2.24.0",
