@@ -77,7 +77,7 @@
     "react-hot-loader": "^4.12.21",
     "start-server-and-test": "^1.11.0",
     "style-loader": "^1.2.1",
-    "ts-jest": "^25.4.0",
+    "ts-jest": "^25.5.1",
     "ts-loader": "^6.2.2",
     "tslint": "^6.1.2",
     "typescript": "^3.8.3",
