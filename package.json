@@ -31,7 +31,7 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@textile/threads-client": "^0.2.5",
+    "@textile/threads-client": "^0.4.2",
     "@types/uuid": "^7.0.2",
     "classnames": "^2.2.6",
     "copy-to-clipboard": "^3.3.1",
