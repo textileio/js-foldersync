@@ -42,7 +42,7 @@
     "moment": "^2.24.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-dropzone": "^10.2.2",
+    "react-dropzone": "^11.0.1",
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.1.2",
     "semantic-ui-react": "^0.88.2",
